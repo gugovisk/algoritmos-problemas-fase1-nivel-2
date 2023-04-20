@@ -1,4 +1,4 @@
-odule Search
+module Search
   class Binary
     def run(array, left, right, x)
       if right >= left
@@ -20,3 +20,4 @@ odule Search
       end
     end
   end
+end
