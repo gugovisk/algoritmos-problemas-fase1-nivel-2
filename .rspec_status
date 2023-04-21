@@ -2,3 +2,5 @@ example_id                        | status | run_time        |
 --------------------------------- | ------ | --------------- |
 ./spec/search/binary_spec.rb[1:1] | passed | 0.00053 seconds |
 ./spec/search/binary_spec.rb[1:2] | passed | 0.0001 seconds  |
+./spec/search/linear_spec.rb[1:1] | passed | 0.00253 seconds |
+./spec/search/linear_spec.rb[1:2] | passed | 0.00072 seconds |
