@@ -1,19 +1,28 @@
-def counting_sort(array)
-    counters = Array.new(array.max + 1, 0)
-    array.each { |e| counters[e] += 1 }
+module Sort
+  class Counting
+    def run(array)
+      max_valor = array.max
+
+      index_array = Array.new(max_valor + 1, 0) #Array.new = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
   
-    result = Array.new(array.size)
-    i = 0
-    counters.size.times do |number|
-      counters[number].times do
-        result[i] = number
-        i += 1
+      array.each do |element|                   #Contando quantas vezes cada elemento aparece no array inicial 
+          index_array[element] += 1
       end
-    end
   
-    result
+      (1..max_valor).each do |i|                
+          index_array[i] += index_array[i-1] 
+      end
+  
+      sorted_array = Array.new(array.size)
+  
+      array.each do |element|
+          sorted_array[index_array[element]-1] = element 
+          index_array[element] -= 1
+      end
+  
+      sorted_array
+
+    end
+  end
 end
 
-arr = [5, 12, 6, 10, 30, 20, 15, 2, 14]
-arr_counting = counting_sort(arr).Array
-puts arr_counting
