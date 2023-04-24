@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative "greedy/maximum_sum"
+require_relative "greedy/minimum_product"
 
 module Greedy
   class Error < StandardError; end
