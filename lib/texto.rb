@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require_relative "string/missing_chars"
+require_relative "texto/missing_chars"
 
-module String
+module Texto
   class Error < StandardError; end
   # Your code goes here...
 end
