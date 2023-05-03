@@ -10,4 +10,12 @@ RSpec.describe Texto::Missing_Chars do
   
       expect(result).to eq(array_pangram)
     end
+
+    it "include?" do
+      array = ["Javascript", "Python", "Java", "C++", "Ruby"]
+
+      c = array.include?("C")      # false
+  
+      expect(c).to eq(false)
+    end
 end
