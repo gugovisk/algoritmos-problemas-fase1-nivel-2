@@ -26,4 +26,11 @@ RSpec.describe Texto::Missing_Chars do
   
       expect(res).to eq("hello world!")
     end
+
+    it "capitalize" do
+      s = 'hello World!' # => "hello World!"
+      res = s.capitalize       # => "Hello world!"
+
+      expect(res).to eq("Hello world!")
+    end
 end
