@@ -18,4 +18,12 @@ RSpec.describe Texto::Missing_Chars do
   
       expect(c).to eq(false)
     end
+
+    it "downcase" do
+      s = 'Hello World!' # => "Hello World!"
+
+      res = s.downcase         # => "hello world!"
+  
+      expect(res).to eq("hello world!")
+    end
 end
