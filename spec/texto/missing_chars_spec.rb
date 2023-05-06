@@ -47,4 +47,11 @@ RSpec.describe Texto::Missing_Chars do
 
       expect(res).to eq(true)
     end
+
+    it "end_with?" do
+      string = "ruby programming"
+      res = string.end_with? "programming"
+
+      expect(res).to eq(true)
+    end
 end
