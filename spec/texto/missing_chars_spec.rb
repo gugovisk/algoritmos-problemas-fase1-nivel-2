@@ -33,4 +33,11 @@ RSpec.describe Texto::Missing_Chars do
 
       expect(res).to eq("Hello world!")
     end
+
+    it "strip" do
+      extra_space = "   test    "
+      res = extra_space.strip
+
+      expect(res).to eq("test")
+    end
 end
