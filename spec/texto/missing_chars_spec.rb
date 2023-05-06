@@ -61,4 +61,10 @@ RSpec.describe Texto::Missing_Chars do
 
       expect(res).to eq("bacon")
     end
+
+    it "chomp" do
+      res = "abcd?".chomp("?")
+      # "abcd"
+      expect(res).to eq("abcd")
+    end
 end
