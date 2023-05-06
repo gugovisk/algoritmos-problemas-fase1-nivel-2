@@ -40,4 +40,11 @@ RSpec.describe Texto::Missing_Chars do
 
       expect(res).to eq("test")
     end
+
+    it "start_with?" do
+      string = "ruby programming"
+      res = string.start_with? "ruby"
+
+      expect(res).to eq(true)
+    end
 end
