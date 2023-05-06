@@ -54,4 +54,11 @@ RSpec.describe Texto::Missing_Chars do
 
       expect(res).to eq(true)
     end
+
+    it "delete_suffix" do
+      string = "bacon is expensive"
+      res = string.delete_suffix(" is expensive")
+
+      expect(res).to eq("bacon")
+    end
 end
