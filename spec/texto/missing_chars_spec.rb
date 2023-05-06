@@ -67,4 +67,11 @@ RSpec.describe Texto::Missing_Chars do
       # "abcd"
       expect(res).to eq("abcd")
     end
+
+    it "gsub" do
+      string = "We have many dogs"
+      res = string.gsub("dogs", "cats")
+      # "We have many cats"
+      expect(res).to eq("We have many cats")
+    end
 end
