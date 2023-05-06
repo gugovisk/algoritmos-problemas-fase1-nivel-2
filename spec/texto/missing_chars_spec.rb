@@ -74,4 +74,11 @@ RSpec.describe Texto::Missing_Chars do
       # "We have many cats"
       expect(res).to eq("We have many cats")
     end
+
+    it "count" do
+      str = "aaab"
+      res = str.count("a")
+      # 3
+      expect(res).to eq(3)
+    end
 end
