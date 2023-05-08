@@ -81,4 +81,11 @@ RSpec.describe Texto::Missing_Chars do
       # 3
       expect(res).to eq(3)
     end
+
+    it "monday" do
+      t = Time.new(1993, 02, 24, 12, 0, 0, "+09:00")
+
+      res = t.monday? #=> false
+      expect(res).to eq(false)
+    end
 end
