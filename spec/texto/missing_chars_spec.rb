@@ -103,4 +103,12 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq(false)
     end
 
+    it "seconds was that since the Unix Epoch" do
+      t = Time.new(1993, 02, 24, 12, 0, 0, "+09:00")
+
+      res = t.to_i #=> 730522800
+      expect(res).to eq(730522800)
+    end
+
+
 end
