@@ -17,7 +17,7 @@ module Search
           
             (0..presence.length-1).each do |i|
               if presence[i] == 0
-                p "The missing number between #{array[0]} and #{array[array.length-1]} is #{i+1}"
+                return "The missing number between #{array[0]} and #{array[array.length-1]} is #{i+1}"
               end
             end
         end        
