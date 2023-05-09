@@ -11,7 +11,7 @@ example_id                                 | status | run_time        |
 ./spec/search/binary_spec.rb[1:2]          | passed | 0.00013 seconds |
 ./spec/search/linear_spec.rb[1:1]          | passed | 0.00253 seconds |
 ./spec/search/linear_spec.rb[1:2]          | passed | 0.00072 seconds |
-./spec/search/missing_number_spec.rb[1:1]  | passed | 0.00059 seconds |
+./spec/search/missing_number_spec.rb[1:1]  | passed | 0.0006 seconds  |
 ./spec/sort/bubble_spec.rb[1:1]            | passed | 0.00056 seconds |
 ./spec/sort/counting_spec.rb[1:1]          | passed | 0.00056 seconds |
 ./spec/texto/count_spec.rb[1:1]            | passed | 0.0009 seconds  |
