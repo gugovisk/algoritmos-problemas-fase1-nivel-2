@@ -110,5 +110,12 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq(730522800)
     end
 
+    it "mday" do
+      t = Time.now
+
+      res = t.mday
+      expect(res).to eq(10)
+    end
+
 
 end
