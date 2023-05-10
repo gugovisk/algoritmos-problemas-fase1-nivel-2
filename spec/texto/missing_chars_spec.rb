@@ -131,5 +131,13 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq("Printed on 11/19/2007")
     end
 
+    it "hora convencional" do
+      t = Time.new(2007,11,19,8,37,48,"-06:00") 
+
+      res = t.strftime("at %I:%M %p")
+      expect(res).to eq("at 08:37 AM")
+    end
+
+
 
 end
