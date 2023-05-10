@@ -124,5 +124,12 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq(5)
     end
 
+    it "data convencional" do
+      t = Time.new(2007,11,19,8,37,48,"-06:00") 
+
+      res = t.strftime("Printed on %m/%d/%Y")
+      expect(res).to eq("Printed on 11/19/2007")
+    end
+
 
 end
