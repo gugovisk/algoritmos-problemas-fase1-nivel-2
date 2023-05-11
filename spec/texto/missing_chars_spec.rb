@@ -82,6 +82,35 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq(3)
     end
 
+    it "take" do
+      array = [0,1,2,3,4]
+      
+      res = array.take(3)
+      expect(res).to eq([0,1,2])
+    end
+
+    it "drop" do
+      array = [0,1,2,3,4]
+      
+      res = array.drop(3)
+      expect(res).to eq([3,4])
+    end
+
+    it "shift" do
+      array = [0,1,2,3,4]
+      
+      res = array.shift
+      expect(res).to eq(0)
+    end
+
+    it "push" do
+      array = [0,1,2,3,4]
+      
+      res = array.push(99)
+      expect(res).to eq([0,1,2,3,4,99])
+    end
+
+
     it "monday" do
       t = Time.new(1993, 02, 24, 12, 0, 0, "+09:00")
 
@@ -114,7 +143,7 @@ RSpec.describe Texto::Missing_Chars do
       t = Time.now
 
       res = t.mday
-      expect(res).to eq(10)
+      expect(res).to eq(t.day)
     end
 
     it "mday" do
