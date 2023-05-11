@@ -103,6 +103,13 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq(0)
     end
 
+    it "push" do
+      array = [0,1,2,3,4]
+      
+      res = array.push(99)
+      expect(res).to eq([0,1,2,3,4,99])
+    end
+
 
     it "monday" do
       t = Time.new(1993, 02, 24, 12, 0, 0, "+09:00")
