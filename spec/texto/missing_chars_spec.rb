@@ -124,6 +124,13 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq([1, 2, 3, [4, 5]])
     end
 
+    it "keed_if" do
+      a = %w{ a b c d e f }
+      res = a.keep_if { |v| v =~ /[aeiou]/ }  #=> ["a", "e"]
+
+      expect(res).to eq(["a", "e"])
+    end
+
 
     it "monday" do
       t = Time.new(1993, 02, 24, 12, 0, 0, "+09:00")
