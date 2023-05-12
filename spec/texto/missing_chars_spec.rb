@@ -110,6 +110,27 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq([0,1,2,3,4,99])
     end
 
+    it "fetch" do
+      a = [ 11, 22, 33, 44 ]
+      res = a.fetch(1)   #=> 22
+
+      expect(res).to eq(22)
+    end
+
+    it "flatten" do
+      a = [ 1, 2, [3, [4, 5] ] ]
+      res = a.flatten(1)   #=> [1, 2, 3, [4, 5]]
+
+      expect(res).to eq([1, 2, 3, [4, 5]])
+    end
+
+    it "keed_if" do
+      a = %w{ a b c d e f }
+      res = a.keep_if { |v| v =~ /[aeiou]/ }  #=> ["a", "e"]
+
+      expect(res).to eq(["a", "e"])
+    end
+
 
     it "monday" do
       t = Time.new(1993, 02, 24, 12, 0, 0, "+09:00")
