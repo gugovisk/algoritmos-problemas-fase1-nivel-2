@@ -206,6 +206,13 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq(-1.0)
     end
 
+    it "exp" do
+      res = Math.exp(0)
+
+      expect(res).to eq(1.0)
+    end
+
+
 
 
 end
