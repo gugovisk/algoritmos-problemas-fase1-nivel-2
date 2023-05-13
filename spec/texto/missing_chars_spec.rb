@@ -194,6 +194,12 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq(1.0)
     end
 
+    it "sin" do
+      res = Math.sin(Math::PI/2) #=> 1.0
+
+      expect(res).to eq(1.0)
+    end
+
 
 
 end
