@@ -188,6 +188,12 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq("at 08:37 AM")
     end
 
+    it "log2" do
+      res = Math.log2(2)
+
+      expect(res).to eq(1.0)
+    end
+
 
 
 end
