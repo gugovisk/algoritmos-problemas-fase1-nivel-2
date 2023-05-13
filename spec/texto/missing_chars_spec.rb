@@ -188,6 +188,31 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq("at 08:37 AM")
     end
 
+    it "log2" do
+      res = Math.log2(2)
+
+      expect(res).to eq(1.0)
+    end
+
+    it "sin" do
+      res = Math.sin(Math::PI/2) #=> 1.0
+
+      expect(res).to eq(1.0)
+    end
+
+     it "cos" do
+      res = Math.cos(Math::PI) #=> -1.0
+
+      expect(res).to eq(-1.0)
+    end
+
+    it "exp" do
+      res = Math.exp(0)
+
+      expect(res).to eq(1.0)
+    end
+
+
 
 
 end
