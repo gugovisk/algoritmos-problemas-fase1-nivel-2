@@ -200,6 +200,12 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq(1.0)
     end
 
+     it "cos" do
+      res = Math.cos(Math::PI) #=> -1.0
+
+      expect(res).to eq(-1.0)
+    end
+
 
 
 end
