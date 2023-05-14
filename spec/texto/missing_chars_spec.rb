@@ -224,5 +224,10 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq(6.0)
     end
 
+    it "sinh" do
+      res = Math.sinh(0) #=> 0.0
+
+      expect(res).to eq(0.0)
+    end
 
 end
