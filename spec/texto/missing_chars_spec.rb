@@ -212,6 +212,13 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq(1.0)
     end
 
+    it "hypot" do
+      res = Math.hypot(3, 4)   #=> 5.0
+
+      expect(res).to eq(5.0)
+    end
+
+
 
 
 
