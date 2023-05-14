@@ -218,8 +218,11 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq(5.0)
     end
 
+    it "gamma" do
+      res = Math.gamma(4)   #=> 6.0
 
-
+      expect(res).to eq(6.0)
+    end
 
 
 end
