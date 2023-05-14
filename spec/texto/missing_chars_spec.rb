@@ -230,4 +230,10 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq(0.0)
     end
 
+    it "sqrt" do
+      res = Math.sqrt(9)   #=> 3.0
+
+      expect(res).to eq(3.0)
+    end
+
 end
