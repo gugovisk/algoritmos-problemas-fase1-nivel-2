@@ -236,4 +236,12 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq(3.0)
     end
 
+    it "first" do
+      arr = ['a', 'b', 'c', 'd', 'e', 'f']
+      
+      res = arr.first #=> 1
+
+      expect(res).to eq(1)
+    end
+
 end
