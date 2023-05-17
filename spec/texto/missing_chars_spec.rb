@@ -249,7 +249,7 @@ RSpec.describe Texto::Missing_Chars do
       
       res = arr.last #=> 6
 
-      expect(res).to eq(6)
+      expect(res).to eq("f")
     end
 
 end
