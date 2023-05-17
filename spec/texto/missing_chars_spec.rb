@@ -244,4 +244,12 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq(1)
     end
 
+    it "last" do
+      arr = ['a', 'b', 'c', 'd', 'e', 'f']
+      
+      res = arr.last #=> 6
+
+      expect(res).to eq(6)
+    end
+
 end
