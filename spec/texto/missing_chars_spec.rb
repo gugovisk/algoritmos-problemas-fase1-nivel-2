@@ -241,7 +241,7 @@ RSpec.describe Texto::Missing_Chars do
       
       res = arr.first #=> 1
 
-      expect(res).to eq(1)
+      expect(res).to eq("a")
     end
 
     it "last" do
