@@ -283,6 +283,13 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq(nil)
     end
 
+    it "reverse" do
+      a = [ "a", "b", "c" ]
+      res = a.reverse!       #=> ["c", "b", "a"]
+
+      expect(res).to eq(["c", "b", "a"])
+    end
+
 
 
 
