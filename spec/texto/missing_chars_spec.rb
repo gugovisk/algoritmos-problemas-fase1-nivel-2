@@ -252,4 +252,11 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq("f")
     end
 
+    it "uniq" do
+      arr = [2, 5, 6, 556, 6, 6, 8, 9, 0, 123, 556]
+      res = arr.uniq #=> [2, 5, 6, 556, 8, 9, 0, 123]
+
+      expect(res).to eq([2, 5, 6, 556, 8, 9, 0, 123])
+    end
+
 end
