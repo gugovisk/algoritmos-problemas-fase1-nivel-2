@@ -267,7 +267,13 @@ RSpec.describe Texto::Missing_Chars do
       res=  str #=> "sixth fifth fourth third second first "
 
       expect(res).to eq("sixth fifth fourth third second first ")
+    end
 
+    it "rassoc - case valid entry" do
+      a = [ [ 1, "one"], [2, "two"], [3, "three"], ["ii", "two"] ]
+      res = a.rassoc("two")    #=> [2, "two"]
+
+      expect(res).to eq([2, "two"])
     end
 
 end
