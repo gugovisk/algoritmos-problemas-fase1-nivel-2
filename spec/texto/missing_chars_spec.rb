@@ -276,4 +276,13 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq([2, "two"])
     end
 
+    it "rassoc - case invalid" do
+      a = [ [ 1, "one"], [2, "two"], [3, "three"], ["ii", "two"] ]
+      res = a.rassoc("four")    #=> nil
+
+      expect(res).to eq(nil)
+    end
+
+
+
 end
