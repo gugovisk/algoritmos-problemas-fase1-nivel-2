@@ -251,12 +251,23 @@ RSpec.describe Texto::Missing_Chars do
 
       expect(res).to eq("f")
     end
+  
 
     it "uniq" do
       arr = [2, 5, 6, 556, 6, 6, 8, 9, 0, 123, 556]
       res = arr.uniq #=> [2, 5, 6, 556, 8, 9, 0, 123]
 
       expect(res).to eq([2, 5, 6, 556, 8, 9, 0, 123])
+    end
+
+    it "reverse_each" do
+      words = %w[first second third fourth fifth sixth]
+      str = ""
+      words.reverse_each { |word| str += "#{word} " }
+      res=  str #=> "sixth fifth fourth third second first "
+
+      expect(res).to eq("sixth fifth fourth third second first ")
+
     end
 
 end
