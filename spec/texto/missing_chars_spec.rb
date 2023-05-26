@@ -276,6 +276,11 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq(3)
     end
 
+    it "rindex - another case" do
+      a = [ "a", "b", "b", "b", "c" ]
+      res = a.rindex("z")             #=> nil
 
+      expect(res).to eq(nil)
+    end
     
 end
