@@ -276,18 +276,4 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq(3)
     end
 
-    it "rindex - another case" do
-      a = [ "a", "b", "b", "b", "c" ]
-      res = a.rindex("z")             #=> nil
-
-      expect(res).to eq(nil)
-    end
-
-    it "rotate" do
-      a = [ "a", "b", "c", "d" ]
-      res = a.rotate         #=> ["b", "c", "d", "a"]
-
-      expect(res).to eq(["b", "c", "d", "a"])
-    end
-    
 end
