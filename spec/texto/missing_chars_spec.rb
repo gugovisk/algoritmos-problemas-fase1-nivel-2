@@ -268,5 +268,14 @@ RSpec.describe Texto::Missing_Chars do
 
       expect(res).to eq("sixth fifth fourth third second first ")
     end
+
+    it "rindex" do
+      a = [ "a", "b", "b", "b", "c" ]
+      res = a.rindex("b")             #=> 3
+
+      expect(res).to eq(3)
+    end
+
+
     
 end
