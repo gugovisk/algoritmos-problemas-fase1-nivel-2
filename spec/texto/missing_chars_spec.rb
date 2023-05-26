@@ -282,12 +282,5 @@ RSpec.describe Texto::Missing_Chars do
 
       expect(res).to eq(nil)
     end
-
-    it "rotate" do
-      a = [ "a", "b", "c", "d" ]
-      res = a.rotate         #=> ["b", "c", "d", "a"]
-
-      expect(res).to eq(["b", "c", "d", "a"])
-    end
-
+    
 end
