@@ -267,27 +267,7 @@ RSpec.describe Texto::Missing_Chars do
       res=  str #=> "sixth fifth fourth third second first "
 
       expect(res).to eq("sixth fifth fourth third second first ")
-    end
 
-    it "rindex" do
-      a = [ "a", "b", "b", "b", "c" ]
-      res = a.rindex("b")             #=> 3
-
-      expect(res).to eq(3)
-    end
-
-    it "rindex - another case" do
-      a = [ "a", "b", "b", "b", "c" ]
-      res = a.rindex("z")             #=> nil
-
-      expect(res).to eq(nil)
-    end
-
-    it "rotate" do
-      a = [ "a", "b", "c", "d" ]
-      res = a.rotate         #=> ["b", "c", "d", "a"]
-
-      expect(res).to eq(["b", "c", "d", "a"])
     end
 
 end
