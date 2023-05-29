@@ -270,4 +270,11 @@ RSpec.describe Texto::Missing_Chars do
 
     end
 
+    it "rindex" do
+      a = [ "a", "b", "b", "b", "c" ]
+      res = a.rindex("b")             #=> 3
+
+      expect(res).to eq(3)
+    end
+
 end
