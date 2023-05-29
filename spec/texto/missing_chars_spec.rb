@@ -267,6 +267,7 @@ RSpec.describe Texto::Missing_Chars do
       res=  str #=> "sixth fifth fourth third second first "
 
       expect(res).to eq("sixth fifth fourth third second first ")
+
     end
 
     it "rindex" do
@@ -275,6 +276,5 @@ RSpec.describe Texto::Missing_Chars do
 
       expect(res).to eq(3)
     end
-
 
 end
