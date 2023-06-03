@@ -312,5 +312,15 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq(["b", "c", "d", "a"])
     end
 
+    it "map" do
+      array = [1, 2, 3, 4]
+
+      res = array.map do |a| 
+        a ** 2
+      end
+
+      expect(res).to eq([1, 4, 9, 16])
+    end
+
 
 end
