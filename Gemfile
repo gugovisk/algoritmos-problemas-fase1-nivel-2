@@ -12,3 +12,5 @@ gem "rspec", "~> 3.0"
 gem "rubocop", "~> 1.7"
 
 gem "rspec-rails", "~> 4.1"
+
+gem "cpf_cnpj"
