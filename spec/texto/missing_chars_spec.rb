@@ -167,12 +167,6 @@ RSpec.describe Texto::Missing_Chars do
       expect(res).to eq(t.day)
     end
 
-    it "mday" do
-      t = Time.now
-
-      res = t.mon
-      expect(res).to eq(5)
-    end
 
     it "data convencional" do
       t = Time.new(2007,11,19,8,37,48,"-06:00") 
@@ -310,6 +304,16 @@ RSpec.describe Texto::Missing_Chars do
       res = a.rotate         #=> ["b", "c", "d", "a"]
 
       expect(res).to eq(["b", "c", "d", "a"])
+    end
+
+    it "map" do
+      array = [1, 2, 3, 4]
+
+      res = array.map do |a| 
+        a ** 2
+      end
+
+      expect(res).to eq([1, 4, 9, 16])
     end
 
 
