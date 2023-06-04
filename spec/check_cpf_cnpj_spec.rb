@@ -11,3 +11,14 @@ RSpec.describe Valida_CPF_CNPJ do
     end
   
 end
+
+RSpec.describe Cpu do
+
+    it "check cpu core" do
+  
+      result = Cpu.new.run
+  
+      expect(result).to eq(4)
+    end
+  
+end

@@ -11,7 +11,7 @@ end
 
 class Cpu
 
-    def run(cp)
+    def run
         return OS.cpu_count
     end
     
