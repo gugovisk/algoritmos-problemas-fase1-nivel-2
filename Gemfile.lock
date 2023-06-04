@@ -42,6 +42,7 @@ GEM
     nokogiri (1.15.0)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
+    os (1.1.4)
     parallel (1.20.1)
     parser (3.0.1.0)
       ast (~> 2.4.1)
@@ -110,6 +111,7 @@ PLATFORMS
 DEPENDENCIES
   cpf_cnpj
   linguagem_2021_ruby_ideal!
+  os
   rake (~> 13.0)
   rspec (~> 3.0)
   rspec-rails (~> 4.1)
