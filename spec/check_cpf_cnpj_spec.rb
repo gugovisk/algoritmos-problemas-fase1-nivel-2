@@ -9,16 +9,14 @@ RSpec.describe Valida_CPF_CNPJ do
   
       expect(result).to eq(true)
     end
-  
-end
 
-RSpec.describe Cpu do
+    it "do cpf is formatted" do
+      
+      a = 51577122941
+      cpf = CPF.new(a)
+      result = cpf.formatted         # Return formatted CPF (xxx.xxx.xxx-xx)
 
-    it "check cpu core" do
-  
-      result = Cpu.new.run
-  
-      expect(result).to eq(4)
+      expect(result).to eq("515.771.229-41")
     end
   
 end
