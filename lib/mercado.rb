@@ -1,3 +1,5 @@
+require "./lib/produto.rb"
+
 class Mercado
     def initialize(produto, preco)
       @produto = produto
@@ -5,6 +7,6 @@ class Mercado
     end
     
     def comprar
-      puts "Você comprou o produto #{@produto} no valor de #{@preco}"
+      return "Você comprou o produto #{@produto} no valor de #{@preco}"
     end
 end
