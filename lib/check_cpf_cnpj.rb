@@ -4,7 +4,14 @@ require "os"
 class Valida_CPF_CNPJ
 
     def run(cp)
-        return CPF.valid?(cp)
+        if CPF.valid?(cp)
+            true
+        elsif CNPJ.valid?(cp)
+            true
+        else
+            false
+        end
+        
     end
 
 end

@@ -18,5 +18,15 @@ RSpec.describe Valida_CPF_CNPJ do
 
       expect(result).to eq("515.771.229-41")
     end
+
+    it "check cnpj valid" do
+
+      a = "00394460005887"
+
+      result = Valida_CPF_CNPJ.new.run(a)
+  
+      expect(result).to eq(true)
+
+    end
   
 end
