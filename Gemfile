@@ -16,3 +16,5 @@ gem "rspec-rails", "~> 4.1"
 gem "cpf_cnpj"
 
 gem "os"
+
+gem 'receitaws'
